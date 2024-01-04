@@ -1,0 +1,10 @@
+version: "3.8"
+
+services: 
+  app: 
+    build: . 
+    container_name: gemini_container
+    volumes: 
+      - .:/gemini
+    environment: 
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
